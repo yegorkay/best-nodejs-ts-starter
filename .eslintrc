@@ -4,12 +4,13 @@
     "eslint-config-prettier/@typescript-eslint",
     "plugin:jsdoc/recommended"
   ],
-  "plugins": ["prefer-arrow", "jsdoc", "simple-import-sort"],
+  "plugins": ["prefer-arrow", "jsdoc", "simple-import-sort", "jest"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "env": {
-    "node": true
+    "node": true,
+    "jest": true
   },
   "settings": {
     "import/resolver": {
@@ -42,6 +43,20 @@
           "FunctionExpression": true
         }
       }
+    ],
+    "jest/consistent-test-it": [
+      "error",
+      {
+        "fn": "it"
+      }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.test.ts"],
+      "rules": {
+        "jsdoc/require-jsdoc": 0
+      }
+    }
+  ]
 }
