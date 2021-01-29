@@ -11,23 +11,28 @@
 
 </div>
 
-<h2>Commands</h2>
+## Commands
 
-<div>
-  <p>Install dependencies:</p>
-  <code>
-    npm i
-  </code>
-  <p>Run project:</p>
-  <code>
-    npm start
-  </code>
-  <p>Build project:</p>
-  <code>
-    npm run build
-  </code>
-  <p>Test project:</p>
-  <code>
-    npm t
-  </code>
-</div>
+Install dependencies:
+
+```
+npm i
+```
+
+Run project:
+
+```
+npm start
+```
+
+Run build:
+
+```
+npm run build
+```
+
+Run tests:
+
+```
+npm t
+```
