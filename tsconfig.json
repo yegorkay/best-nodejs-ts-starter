@@ -9,8 +9,6 @@
     "rootDir": "./",
     "outDir": "./build",
     "baseUrl": "./src",
-    "paths": {
-      "@utils/*": ["utils/*"]
-    }
+    "types": ["node", "jest"]
   }
 }
