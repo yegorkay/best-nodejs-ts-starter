@@ -8,12 +8,16 @@
 - [x] Node
 - [x] Jest
 - [x] Github Action Template
+- [x] Best general purpose PR template
+- [x] Precommit hooks that run tests, lint your files, and prettify all your TS jank
 
 </div>
 
 ## Why is it the best?
 
-Because I made it, and because it is infinitely customizable.
+- I made it :heavy_check_mark:
+- This repo can be anything other than an express server :scream_cat:
+- Infinitely customizable :art:
 
 You hate the prettier config?
 
@@ -31,7 +35,7 @@ The CI doesn't suit your needs?
 
 - Read the [Github Action docs](https://docs.github.com/en/actions)
 
-You hate TypeScript?
+You don't like TypeScript?
 
 - Convert all the `.ts` extensions into `.js` extensions
 - Uninstall all `@types` from `package.json`
