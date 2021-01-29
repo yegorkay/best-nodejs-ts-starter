@@ -9,13 +9,21 @@
     "build": "tsc --project ./",
     "check-types": "tsc",
     "check-format": "npm run prettier -- --list-different",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|jsx)\"",
-    "format": "npm run prettier -- --write"
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|jsx)\"",
+    "format": "npm run prettier -- --write",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
     "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "eslint": "^7.18.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "nodemon": "^2.0.7",

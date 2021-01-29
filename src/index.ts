@@ -1,1 +1,3 @@
-export const something = "something";
+const something = 'something'
+
+export default something
