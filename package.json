@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.ts",
     "build": "tsc --project ./",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "check-format": "npm run prettier -- --list-different",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|jsx)\"",
+    "format": "npm run prettier -- --write"
   },
   "author": "",
   "license": "ISC",
