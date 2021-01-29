@@ -1,3 +1,3 @@
-import something from './src'
+import { sayHello } from './src'
 
-console.log(something)
+console.log(sayHello())

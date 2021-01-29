@@ -1,3 +1,4 @@
-const something = 'something'
-
-export default something
+/**
+ * Dummy function that says 'hello!'.
+ */
+export const sayHello = () => 'hello!'

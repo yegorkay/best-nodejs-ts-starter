@@ -1,9 +1,47 @@
 {
   "extends": [
     "airbnb-typescript/base",
-    "eslint-config-prettier/@typescript-eslint"
+    "eslint-config-prettier/@typescript-eslint",
+    "plugin:jsdoc/recommended"
   ],
+  "plugins": ["prefer-arrow", "jsdoc", "simple-import-sort"],
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "jsdoc": {
+      "tagNamePreference": {
+        "param": "arg",
+        "returns": "return"
+      }
+    }
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "prefer-arrow-callback": "error",
+    "prefer-arrow/prefer-arrow-functions": "error",
+    "jsdoc/require-param": 2,
+    "jsdoc/require-description-complete-sentence": 2,
+    "jsdoc/require-returns": 0,
+    "jsdoc/require-jsdoc": [
+      2,
+      {
+        "require": {
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true
+        }
+      }
+    ]
   }
 }
