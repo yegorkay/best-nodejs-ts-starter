@@ -19,23 +19,27 @@
 - This repo can be anything other than an express server :scream_cat:
 - Infinitely customizable :art:
 
-You hate the prettier config?
+## FAQ:
 
-- Read some of the [Prettier docs](https://prettier.io/docs/en/options.html)
+Why is the prettier config not the way I want it?
 
-You hate the eslint config?
+- Read some of the [Prettier docs](https://prettier.io/docs/en/options.html).
 
-- Read the [ESLint docs](https://eslint.org/docs/user-guide/configuring)
+Why is the eslint config so opinionated?
 
-You hate the precommit hooks?
+- It's based on Airbnb's config with some personal preferences thrown in there.
+- Read the [ESLint docs](https://eslint.org/docs/user-guide/configuring).
 
-- Read up on the [lint-staged docs](https://github.com/okonet/lint-staged) and [Husky docs](https://typicode.github.io/husky/#/)
+Why are the precommit hooks not configured the way I need for my project?
 
-The CI doesn't suit your needs?
+- Read up on the [lint-staged docs](https://github.com/okonet/lint-staged) and [Husky docs](https://typicode.github.io/husky/#/).
+
+But we need our CI to deploy somewhere! And we need it to do more things! Where's the repo that has that?
 
 - Read the [Github Action docs](https://docs.github.com/en/actions)
+- Have you heard of AWS, Heroku, Azure, Vercel, or Digital Ocean? There's likely an action that can be the last step in the `deploy.yml` file, and a hosting service that suits your needs.
 
-You don't like TypeScript?
+I don't like TypeScript, but I like everything in the repo. What do I do?
 
 - Convert all the `.ts` extensions into `.js` extensions
 - Uninstall all `@types` from `package.json`
