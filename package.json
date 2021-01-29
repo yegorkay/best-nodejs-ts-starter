@@ -13,7 +13,8 @@
     "check-format": "npm run prettier -- --list-different",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|jsx)\"",
     "format": "npm run prettier -- --write",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx ."
+    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
+    "validate-ci": "npm-run-all --parallel check-types check-format lint"
   },
   "author": "",
   "license": "ISC",
